@@ -1,0 +1,34 @@
+{
+  "name": "maintance",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "GENERATE_SOURCEMAP=false PORT=5110 react-scripts start",
+    "dev": "GENERATE_SOURCEMAP=false PORT=7001 react-scripts start",
+    "preprod": "GENERATE_SOURCEMAP=false PORT=5410 react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
